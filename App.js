@@ -5,11 +5,11 @@ import LoadingScreen from './screens/LoadingScreen';
 import LoginScreen from './screens/LoginScreen';
 import DashboardScreen from './screens/DashboardScreen';
 
-import * as firebase from 'firebase';
-import { firebaseconfig } from './config';
+import firebase from 'firebase';
+import { firebaseConfig } from './config';
 
 if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseconfig);
+  firebase.initializeApp(firebaseConfig);
 } else {
   firebase.app();
 }
